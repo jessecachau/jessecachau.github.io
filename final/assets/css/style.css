@@ -1,0 +1,151 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 2%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+.menu-icon{
+    width: 40px;
+    cursor:pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color:palevioletred;
+    border-bottom: 2px solid rgb(207, 106, 106);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+
+}
+.socials{
+    margin: 20px 0;
+}
+.col-1{
+    flex-basis:40%;
+    position:relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 54px;
+    margin: 20px 0;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: black;
+}
+.col-1 h4{
+    font-size: 20px;
+}
+.col-1 p{
+    margin: 16px 0;
+    font-size: 20px;
+}
+body {
+    background :linear-gradient(to right,white, #ffa3a3);
+}
+.col-1::after{
+    content: '';
+    width: 15px;
+    height: 57%;
+    background: linear-gradient(palevioletred, rgb(207, 106, 106));
+    position: absolute;
+    left: -40;
+    top: 8px;
+}
+.topdog {
+    width: 400px;
+    margin-right: 125px;
+}
+.location1 {
+    width: 400px;
+    margin-right: 125px;
+}
+.location2{
+    width: 400px;
+    margin-right: 125px;
+}
+.front{
+    width: 400px;
+    margin-right: 125px;
+}
+.swag {
+    width: 500px;
+    margin-bottom: 50px;
+}
+.blossom {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url();
+    animation:  10s linear infinite;
+}
+
+@keyframes blossom-fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+.moving-image {
+    position: absolute;
+    bottom: 50%;
+    left: 100px;
+    width: 380px;
+    height:180px;
+    animation: move-left 4s ease-in-out infinite;
+}
+@keyframes move-left { 
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+.babes {
+    width: 500px;
+    margin-bottom: 50px;
+}
+.instagram a:hover{
+    color:pink;
+}
